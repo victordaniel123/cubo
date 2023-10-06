@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255); /* Color de fondo de la página */
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+#rubikImage {
+    width: 300px; /* Tamaño inicial de la imagen en píxeles */
+    height: 400px; /* Tamaño inicial de la imagen en píxeles */
+    margin-top: 70px; /* Posición desde la parte superior en píxeles */
+    margin-left: 100px; /* Posición desde la izquierda en píxeles */
+}
+
+.left-column, .right-column, .middle-column, .top-row, .bottom-row {
+    position: absolute;
+    padding: 20px;
+   
+    color: #000000; /* Color del texto en las columnas */
+}
+
+.left-column {
+    background-color: #D358F7; /* Color de la columna izquierda */
+    width: 150px; /* Ancho de la columna izquierda */
+    height: 100vh; /* Alto de la columna izquierda, ocupa toda la altura */
+    top: 0; /* Se coloca en la parte superior del contenedor */
+    left: 0; /* Se coloca en el lado izquierdo del contenedor */
+}
+
+.right-column {
+    background-color: #D358F7; /* Color de la columna derecha */
+    width: 150px; /* Ancho de la columna derecha */
+    height: 100vh; /* Alto de la columna derecha, ocupa toda la altura */
+    top: 0; /* Se coloca en la parte superior del contenedor */
+    right: 0; /* Se coloca en el lado derecho del contenedor */
+}
+
+.middle-column {
+    background-color: rgb(41, 40, 40); /* Color de la columna del medio */
+    width: calc(100% - 320px); /* Ancho de la columna del medio, el 320px representa el ancho total de las columnas izquierda y derecha más el espacio entre ellas */
+    height: 100vh; /* Alto de la columna del medio, ocupa toda la altura */
+    top: 0; /* Se coloca en la parte superior del contenedor */
+    left: 160px; /* Se coloca a 160px del lado izquierdo del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea los elementos dentro de la columna del medio */
+    align-items: center; /* Alinea los elementos horizontalmente en el centro */
+}
+
+.top-row {
+    background-color: #D358F7; /* Color de la fila superior */
+    width: 100%; /* Ancho del 100% para ocupar todo el espacio disponible */
+    height: 50px; /* Alto de la fila superior */
+    bottom: 620px; /* Se coloca a 100px de la parte inferior del contenedor del medio */
+    left: 0; /* Se coloca en el lado izquierdo del contenedor del medio */
+}
+
+.bottom-row {
+    background-color: #D358F7; /* Color de la fila inferior */
+    width: 100%; /* Ancho del 100% para ocupar todo el espacio disponible */
+    height: 50px; /* Alto de la fila inferior */
+    bottom: 10px; /* Se coloca a 50px de la parte inferior del contenedor del medio */
+    left: 0; /* Se coloca en el lado izquierdo del contenedor del medio */
+}
+
+.bottom-bar {
+    position: relative; /* Permite posicionar elementos hijos de acuerdo a este contenedor */
+    height: 100px;
+}
+
+.boton1 {
+    position: absolute; /* Permite posicionar el botón de forma absoluta dentro del contenedor padre (.bottom-bar) */
+    top: -100px; /* Ajusta la posición vertical del botón en relación con la parte superior del contenedor padre */
+    left: 600px; /* Ajusta la posición horizontal del botón en relación con el lado izquierdo del contenedor padre */
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.boton1:hover {
+    background-color: #FF884D;
+}
+
+.boton1 {
+    position: absolute;
+    top: -150px; /* Ajusta la posición vertical del botón con respecto al borde superior del contenedor padre */
+    left: 660px; /* Ajusta la posición horizontal del botón con respecto al borde izquierdo del contenedor padre */
+    /* Resto del código CSS... */
+}
+
+.boton2 {
+    position: absolute; /* Permite posicionar el botón de forma absoluta dentro del contenedor padre (.bottom-bar) */
+    top: -150px; /* Ajusta la posición vertical del botón en relación con la parte superior del contenedor padre */
+    left: 510px; /* Ajusta la posición horizontal del botón en relación con el lado izquierdo del contenedor padre */
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
